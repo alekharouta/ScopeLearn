@@ -1,4 +1,4 @@
-package com.scopelearn.ScopeLearn;
+package com.scopelearn.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
