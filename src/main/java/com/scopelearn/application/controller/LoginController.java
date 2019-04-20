@@ -4,32 +4,40 @@
 
 package com.scopelearn.application.controller;
 
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.scopelearn.application.entity.LoginDetails;
+import com.scopelearn.application.service.LoginService;
 
+@Controller
 public class LoginController {
 	
+	@Autowired
+	LoginService loginService;
 
-    @GetMapping("/login")
-    public String login(Model model) {
-        
+    @GetMapping("/login.htm")
+    public String login(ModelMap model, HttpServletRequest request) {        	
 
         return "login";
     }
 	
-    @PostMapping("/login")
-    public String registration(@ModelAttribute("login") LoginDetails loginDetails, BindingResult bindingResult) {
+    @PostMapping("/login.htm")
+    public String registration(@ModelAttribute("login") LoginDetails loginDetails,HttpServletRequest httpServletRequest) {
        
-
-        if (bindingResult.hasErrors()) {
-            return "login";
+    	if (httpServletRequest.getSession().getAttribute("username") == null)
+        {
+    		httpServletRequest.getSession().invalidate();
+          return "redirect:/login.htm";
         }
 
+    	loginService.userLogin(loginDetails);
 
         return "redirect:/dashboard";
     }
