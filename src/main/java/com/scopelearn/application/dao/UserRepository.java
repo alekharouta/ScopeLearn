@@ -5,14 +5,14 @@
 package com.scopelearn.application.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import com.scopelearn.application.entity.RegisterDetails;
 
-@Repository("user")
 public interface UserRepository extends JpaRepository<RegisterDetails, Long>{
 	 
-	RegisterDetails findByName(final String username);
+	 @Query("SELECT p FROM RegisterDetails p WHERE p.username=:username")
+	 RegisterDetails findByName(@Param("username")final String username);	
 	
-	RegisterDetails findByMobile(final String mobilenumber);
 }

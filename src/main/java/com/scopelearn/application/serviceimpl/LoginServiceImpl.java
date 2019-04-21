@@ -3,12 +3,14 @@ package com.scopelearn.application.serviceimpl;
 import java.util.Base64;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.scopelearn.application.dao.UserRepository;
 import com.scopelearn.application.entity.LoginDetails;
 import com.scopelearn.application.entity.RegisterDetails;
 import com.scopelearn.application.service.LoginService;
 
+@Service("loginService")
 public class LoginServiceImpl implements LoginService{
 
 	@Autowired
