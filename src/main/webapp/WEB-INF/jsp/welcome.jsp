@@ -1,2 +1,2 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
-<% response.sendRedirect("login.htm");%>
+<% response.sendRedirect("login.htm"); %>
