@@ -7,7 +7,7 @@
 <title>ScopeLearn | Home</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="assets/img/favicon.ico"
+<link rel="shortcut icon" href="/img/favicon.ico"
 	type="image/x-icon">
 
 <!-- Font awesome -->
@@ -66,127 +66,15 @@ input[type="button"] {
 }
 </style>
 </head>
-<script src="assets/js/jquery.js"></script>
+<script src="/js/jquery.js"></script>
 
 <body>
 
+<header id="mu-header">
+<jsp:include page="header.jsp"></jsp:include>
+</header>
 
-
-	<!--START SCROLL TOP BUTTON -->
-	<a class="scrollToTop" href="#"> <i class="fa fa-angle-up"></i>
-	</a>
-	<!-- END SCROLL TOP BUTTON -->
-
-	<!-- Start header  -->
-	<header id="mu-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<div class="mu-header-area">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<div class="mu-header-top-left">
-									<div class="mu-top-email">
-										<i class="fa fa-envelope"></i> <span>techie.alekh@yahoo.com</span>
-									</div>
-									<div class="mu-top-phone">
-										<i class="fa fa-phone"></i> <span>(+91) 9727035970</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<div class="mu-header-top-right">
-									<nav>
-										<ul class="mu-top-social-nav">
-											<li><a href="www.facebook.com"><span
-													class="fa fa-facebook"></span></a></li>
-											<li><a href="www.twitter.com"><span
-													class="fa fa-twitter"></span></a></li>
-											<li><a href="www.google.com"><span
-													class="fa fa-google-plus"></span></a></li>
-											<li><a href="www.linkedin.com"><span
-													class="fa fa-linkedin"></span></a></li>
-											<li><a href="www.youtube.com"><span
-													class="fa fa-youtube"></span></a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- End header  -->
-	<!-- Start menu -->
-	<section id="mu-menu">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-					<button type="button" class="navbar-toggle collapsed"
-						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-						aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
-					<!-- LOGO -->
-					<!-- TEXT BASED LOGO -->
-					<a class="navbar-brand" href="index.html"><i
-						class="fa fa-university"></i><span>ScopeLearn</span></a>
-					<!-- IMG BASED LOGO  -->
-					<!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="course.html">Course Archive</a></li>
-								<li><a href="course-detail.html">Course Detail</a></li>
-							</ul></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="blog-archive.html">Blog Archive</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-							</ul></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a onclick="cal">Calculator</a></li>
-						<li><a href="#" id="mu-search-icon"><i
-								class="fa fa-search"></i></a></li>
-					</ul>
-				</div>
-				<!--/.nav-collapse -->
-			</div>
-		</nav>
-	</section>
-	<!-- End menu -->
-
-	<!-- Start search box -->
-	<div id="mu-search">
-		<div class="mu-search-area">
-			<button class="mu-search-close">
-				<span class="fa fa-close"></span>
-			</button>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<form class="mu-search-form">
-							<input type="search"
-								placeholder="Type Your Keyword(s) & Hit Enter">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End search box -->
-	<!-- Start Slider -->
+		<!-- Start Slider -->
 	<section id="mu-slider">
 		<!-- Start single slider item -->
 		<div class="mu-slider-single">
@@ -227,44 +115,6 @@ input[type="button"] {
 		<!-- Start single slider item -->
 	</section>
 	<!-- End Slider -->
-	<!-- Start service  -->
-	<section id="mu-service">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<div class="mu-service-area">
-						<!-- Start single service -->
-						<div class="mu-service-single">
-							<span class="fa fa-book"></span>
-							<h3>Learn Online</h3>
-							<p>ScopeLearn is a learning platform with online classes
-								taught by the world's best practitioners.</p>
-						</div>
-						<!-- Start single service -->
-						<!-- Start single service -->
-						<div class="mu-service-single">
-							<span class="fa fa-users"></span>
-							<h3>Expert Teachers</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Minima officiis, deleniti dolorem exercitationem praesentium,
-								est!</p>
-						</div>
-						<!-- Start single service -->
-						<!-- Start single service -->
-						<div class="mu-service-single">
-							<span class="fa fa-table"></span>
-							<h3>Best Classrooms</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Minima officiis, deleniti dolorem exercitationem praesentium,
-								est!</p>
-						</div>
-						<!-- Start single service -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End service  -->
 
 	<!-- Start about us -->
 	<section id="mu-about-us">
@@ -377,72 +227,7 @@ input[type="button"] {
 								saepe reprehenderit totam aliquam architecto fugiat sunt animi!</p>
 						</div>
 						<!-- End Title -->
-						<!-- Start features content -->
-						<div class="mu-features-content">
-							<div class="row">
-								<div class="col-lg-4 col-md-4  col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-book"></span>
-										<h4>Professional Courses</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-users"></span>
-										<h4>Expert Teachers</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-laptop"></span>
-										<h4>Online Learning</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-microphone"></span>
-										<h4>Audio Lessons</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-film"></span>
-										<h4>Video Lessons</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6">
-									<div class="mu-single-feature">
-										<span class="fa fa-certificate"></span>
-										<h4>Professional Certificate</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-											elit. Accusamus non dolorem excepturi libero itaque sint
-											labore similique maxime natus eum.</p>
-										<a href="#">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End features content -->
+						
 					</div>
 				</div>
 			</div>
@@ -679,79 +464,10 @@ input[type="button"] {
 	</section>
 	<!-- End our teacher -->
 
-
-	<!-- Start footer -->
-	<footer id="mu-footer">
-		<!-- start footer top -->
-		<div class="mu-footer-top">
-			<div class="container">
-				<div class="mu-footer-top-area">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-3">
-							<div class="mu-footer-widget">
-								<h4>Information</h4>
-								<ul>
-									<li><a href="#">About Us</a></li>
-									<li><a href="">Features</a></li>
-									<li><a href="">Course</a></li>
-									<li><a href="">Event</a></li>
-									<li><a href="">Sitemap</a></li>
-									<li><a href="">Term Of Use</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3">
-							<div class="mu-footer-widget">
-								<h4>Student Help</h4>
-								<ul>
-									<li><a href="">Get Started</a></li>
-									<li><a href="#">My Questions</a></li>
-									<li><a href="">Download Files</a></li>
-									<li><a href="">Latest Course</a></li>
-									<li><a href="">Academic News</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3">
-							<div class="mu-footer-widget">
-								<h4>News letter</h4>
-								<p>Get latest update, news & academic offers</p>
-								<form class="mu-subscribe-form">
-									<input type="email" placeholder="Type your Email">
-									<button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-								</form>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3">
-							<div class="mu-footer-widget">
-								<h4>Contact</h4>
-								<address>
-									<p>P.O. Box 320, Bellandur, Bangalore , INDIA</p>
-									<p>Phone: (+91) 9727035970</p>
-									<p>Website: www.scopelearn.com</p>
-									<p>Email: techie.alekh@yahoo.com</p>
-								</address>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end footer top -->
-		<!-- start footer bottom -->
-		<div class="mu-footer-bottom">
-			<div class="container">
-				<div class="mu-footer-bottom-area">
-					<p>
-						&copy; All Right Reserved. Designed by <a
-							href="http://www.markups.io/" rel="nofollow">scopelearn.com</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- end footer bottom -->
-	</footer>
-	<!-- End footer -->
+	<footer class="clearfix loginfooter">
+     <jsp:include page="footer.jsp"></jsp:include>  
+    </footer>
+	
 
 	<!-- jQuery library -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -769,7 +485,7 @@ input[type="button"] {
 
 
 	<!-- Custom js -->
-	<script src="assets/js/custom.js"></script>
+	<script src="/js/custom1.js"></script>
 
 </body>
 </html>

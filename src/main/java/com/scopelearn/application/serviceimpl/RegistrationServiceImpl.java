@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 import com.scopelearn.application.dao.UserRegisterRepository;
 import com.scopelearn.application.entity.RegisterDetails;
 import com.scopelearn.application.service.RegistrationService;
-
-@Service("registerService")
+@Service
 public class RegistrationServiceImpl implements RegistrationService{
 
 	@Autowired

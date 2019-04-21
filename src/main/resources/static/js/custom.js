@@ -1,249 +1,126 @@
-/** 
-  * Template Name: Varsity
-  * Version: 1.0  
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
-
-  Custom JS
-  
-
-  1. SEARCH FORM
-  2. ABOUT US VIDEO
-  2. TOP SLIDER
-  3. ABOUT US (SLICK SLIDER) 
-  4. LATEST COURSE SLIDER (SLICK SLIDER) 
-  5. TESTIMONIAL SLIDER (SLICK SLIDER)
-  6. COUNTER
-  7. RELATED ITEM SLIDER (SLICK SLIDER)
-  8. MIXIT FILTER (FOR GALLERY)
-  9. FANCYBOX (FOR PORTFOLIO POPUP VIEW)  
-  11. HOVER DROPDOWN MENU
-  12. SCROLL TOP BUTTON  
-
-  
-**/
-
-jQuery(function($){
-
-
-  /* ----------------------------------------------------------- */
-  /*  1. SEARCH FORM
-  /* ----------------------------------------------------------- */
-
-   jQuery('#mu-search-icon').on('click', function(event) {
-        event.preventDefault();
-        $('#mu-search').addClass('mu-search-open');
-        $('#mu-search form input[type="search"]').focus();
+window.setTimeout(function() {
+    $(".alertClose").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
     });
-    
-    jQuery('.mu-search-close').on('click', function(event) {
-      $("#mu-search").removeClass('mu-search-open');
-    });
+}, 4000);
 
-/* ----------------------------------------------------------- */
-/*  2. ABOUT US VIDEO
-/* ----------------------------------------------------------- */
-    // WHEN CLICK PLAY BUTTON 
-    jQuery('#mu-abtus-video').on('click', function(event) {
-      event.preventDefault();
-      $('body').append("<div id='about-video-popup'><span id='mu-video-close' class='fa fa-close'></span><iframe id='mutube-video' name='mutube-video' frameborder='0' allowfullscreen></iframe></div>");        
-      $("#mutube-video").attr("src", $(this).attr("href"));
-    });         
-    // WHEN CLICK CLOSE BUTTON
-    $(document).on('click','#mu-video-close', function(event) {     
-      $(this).parent("div").fadeOut(1000);
-    });
-    // WHEN CLICK OVERLAY BACKGROUND
-    $(document).on('click','#about-video-popup', function(event) {
-      $(this).remove();
-    });
-  
-  /* ----------------------------------------------------------- */
-  /*  3. TOP SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
-
-    jQuery('#mu-slider').slick({
-      dots: false,
-      infinite: true,
-      arrows: true,
-      speed: 500,     
-      autoplay: true,      
-      cssEase: 'linear'
-    });
-
-  /* ----------------------------------------------------------- */
-  /*  4. ABOUT US (SLICK SLIDER)
-  /* ----------------------------------------------------------- */      
-
-    jQuery('#mu-testimonial-slide').slick({
-      dots: true,
-      infinite: true,
-      arrows: false,
-      speed: 500,
-      autoplay: true,          
-      cssEase: 'linear'
-    });
-  
-
-  /* ----------------------------------------------------------- */
-  /*  5. LATEST COURSE SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
-
-    jQuery('#mu-latest-course-slide').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 2500,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-
-  /* ----------------------------------------------------------- */
-  /*  6. TESTIMONIAL SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
-
-    jQuery('.mu-testimonial-slider').slick({
-      dots: true,      
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      speed: 500,      
-      cssEase: 'linear'
-    });       
-
-  /* ----------------------------------------------------------- */
-  /*  7. COUNTER
-  /* ----------------------------------------------------------- */
-
-    jQuery('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
-
-  /* ----------------------------------------------------------- */
-  /*  8. RELATED ITEM SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
-
-    jQuery('#mu-related-item-slide').slick({
-      dots: false,
-      arrows: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2500,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-
-  /* ----------------------------------------------------------- */
-  /*  9. MIXIT FILTER (FOR GALLERY) 
-  /* ----------------------------------------------------------- */  
-
-    jQuery(function(){
-      jQuery('#mixit-container').mixItUp();
-    });
-
-  /* ----------------------------------------------------------- */
-  /*  10. FANCYBOX (FOR PORTFOLIO POPUP VIEW) 
-  /* ----------------------------------------------------------- */ 
-      
-    jQuery(document).ready(function() {
-      jQuery(".fancybox").fancybox();
-    });
-  
-  /* ----------------------------------------------------------- */
-  /*  11. HOVER DROPDOWN MENU
-  /* ----------------------------------------------------------- */ 
-  
-  // for hover dropdown menu
-    jQuery('ul.nav li.dropdown').hover(function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-    }, function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-    });
-
-    
-  /* ----------------------------------------------------------- */
-  /*  12. SCROLL TOP BUTTON
-  /* ----------------------------------------------------------- */
-
-  //Check to see if the window is top if not then display button
-
-    jQuery(window).scroll(function(){
-      if (jQuery(this).scrollTop() > 300) {
-        jQuery('.scrollToTop').fadeIn();
-      } else {
-        jQuery('.scrollToTop').fadeOut();
-      }
-    });
-     
-    //Click event to scroll to top
-
-    jQuery('.scrollToTop').click(function(){
-      jQuery('html, body').animate({scrollTop : 0},800);
-      return false;
-    });  
-  
-
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	$( "input:password" ).attr("autocomplete","off");
+	$( "input:text" ).attr("autocomplete","off");
 });
 
+$('.closeall').click(function(){
+	$('.panel-collapse.in').collapse('hide');
+});
+
+$('.openall').click(function(){
+	$('.panel-collapse:not(".in")').collapse('show');
+});
+
+$('.editBtn').on('click', function(event) {
+	event.preventDefault();  		
+	if ($('.disable').attr('disabled')){
+		$('.disable').removeAttr('disabled');
+	}else{
+		$('.disable').attr('disabled', 'disabled');
+	}
+});
+
+$(function() {
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span');
+    $('.tree li.parent_li > span').on('click', function(e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');            
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).find(' > i').addClass('fa-folder').removeClass('fa-folder-open');
+        } else {
+            children.show('fast');
+            $(this).find(' > i').addClass('fa-folder-open').removeClass('fa-folder');
+        }
+        e.stopPropagation();
+    });       
+});
+
+if (top.location != location) {
+	top.location.href = document.location.href ;
+}
+
+$(function() {
+	$('#keyUsage').multiselect();
+	$('#enhancedkeyUsage').multiselect();
+	$('#subjctDNDetails').multiselect();
+});
+
+$(document).ready(function(){
+	
+	$('#keyUsageUse').change(function(){
+	if(this.checked)
+		$('.multioption').fadeIn('slow');
+	else
+		$('.multioption').fadeOut('slow');
+	});
+});
+ 
+// replace any <,>,'," with empty in any text field
+$(document).on("input change drag drop", ".formField", function() {
+		
+	var newVal = $(this).val().replace(/[\<\>]/g,'');
+	newVal = newVal.replace(/["']/g, '');
+	newVal = newVal.replace(/&lt;/g, '').replace(/&gt;/g, '').replace(/&quot;/g, '').replace(/&apos;/g, '');
+	newVal = newVal.replace(/&#60/g, '').replace(/&#62;/g, '').replace(/&#34/g, '').replace(/&#39/g, '');
+	newVal = newVal.replace(/ff1c/g, '').replace(/ff1e/g, '');
+	$(this).val(newVal);
+});
+
+function getEncryptedPassword(givenPassword){
+	var encryptedPassword;
+	
+	$.ajax({
+		type : "POST",
+		url : "getEncryptedPassword.htm",
+		beforeSend: function(xhr) {
+            // here it is
+            xhr.setRequestHeader(header, token);
+        },
+		cache : false,
+        async: false,
+        data : {givenPassword : givenPassword},
+		success : function(result) {
+			
+			encryptedPassword = result;
+		},
+		error : function(error) {
+			
+			loadingPleaseWait('N');
+			console.log('ajax call getEncryptedPassword error : '+error);
+		}
+	});
+	
+	return encryptedPassword;
+}
+
+function getPKCS11Data(){
+	var pkcs11Data;
+	
+	$.ajax({
+		type : "POST",
+		url : "getPKCS11Data.htm",
+		beforeSend: function(xhr) {
+            // here it is
+            xhr.setRequestHeader(header, token);
+        },
+		cache : false,
+        async: false,
+		success : function(result) {
+			
+			pkcs11Data = result;
+		},
+		error : function(error) {
+			loadingPleaseWait('N');
+			console.log('ajax call pkcs11Data error : '+error);
+		}
+	});
+	
+	return pkcs11Data;
+}

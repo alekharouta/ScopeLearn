@@ -20,13 +20,19 @@ public class LoginController {
 	@Autowired
 	LoginServiceImpl loginService;
 
-	@GetMapping("/login")
+	@GetMapping("index")
+	public String welome(ModelMap model, HttpServletRequest request) {
+		model.addAttribute("index");
+		return "index";
+	}
+	
+	@GetMapping("login")
 	public String login(ModelMap model, HttpServletRequest request) {
 
 		return "login";
 	}
 
-	@PostMapping("/login")
+	@PostMapping("login")
 	public String registration(@ModelAttribute("login") LoginDetails loginDetails,
 			HttpServletRequest httpServletRequest) {
 
