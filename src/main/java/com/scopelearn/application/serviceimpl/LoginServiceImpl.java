@@ -9,8 +9,7 @@ import com.scopelearn.application.dao.UserRepository;
 import com.scopelearn.application.entity.LoginDetails;
 import com.scopelearn.application.entity.RegisterDetails;
 import com.scopelearn.application.service.LoginService;
-
-@Service("loginService")
+@Service
 public class LoginServiceImpl implements LoginService{
 
 	@Autowired
@@ -28,7 +27,7 @@ public class LoginServiceImpl implements LoginService{
 	        String password = new String(decoder.decode(registerDetails.getPassword()));  
 	        if(password.equals(loginDetails.getPassword())){
 	        	
-	        	return "successs";
+	        	return "success";
 	        }
 		}
 		

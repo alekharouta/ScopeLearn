@@ -15,7 +15,6 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta content="" name="description" />
-<link rel="icon" href="/js/alekh.JPG">
 <title>Login</title>
 
    <%--  <script src="<%=request.getContextPath()%>/js/jquery-1.6.2.js"></script> --%>
@@ -97,63 +96,28 @@
 		<jsp:include page="header.jsp"></jsp:include>
 	</header>
 
-	<div class="wrap clearfix">
-		<div class="loginBlk clearfix">
-			<div class="col-md-4 pull-center">
-				<div class="loginForm">
-					<h3>Login</h3>
-					<form:form id="loginForm" modelAttribute="login" action="login" method="post">
-                <table align="center">
-                    <tr>
-                        <td>
-                            <form:label path="username">Username: </form:label>
-                        </td>
-                        <td>
-                            <form:input path="username" name="username" id="username" placeholder="UserName"/>
-                            <span id="loginUserNameError" class="errors">required</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="password">Password:</form:label>
-                            <span id="loginUserPwdError" class="errors">required</span>
-                        </td>
-                        <td>
-                            <form:password path="password" name="password" id="password" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td align="left">
-                            <form:button id="loginBtn" name="login" onclick="loginSign()">Login</form:button>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td><a href="register">Register</a>
-                        </td>
-                    </tr>
-                </table>
-            </form:form>
-            <table align="center">
-                <tr>
-                    <td style="font-style: italic; color: red;">${message}</td>
-                </tr>
-            </table>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<!-- Dummy form to submit for login -->
-	<form autocomplete="off" id="userLogin" name="userLogin" action="login"
-		method="POST"></form>
-	<footer class="clearfix loginfooter">
+	
+	<table>
+            <tr>
+                <td>Welcome ${username}</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td><a href="home.jsp">Home</a>
+                </td>
+            </tr>
+        </table>
+	
+	
+	
+	
+		<footer class="clearfix loginfooter">
 		<jsp:include page="footer.jsp"></jsp:include>
 	</footer>
 
-	<script href="/js/custom.js"></script>
 
 </body>
 </html>

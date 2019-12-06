@@ -6,14 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication(scanBasePackages="com.scopelearn.appliation")
-@EnableJpaRepositories
-@EnableAutoConfiguration
+@SpringBootApplication
+@EnableScheduling
 public class ScopeLearnApplication // extends SpringBootServletInitializer
 {
 	 private static final Logger LOGGER = LogManager.getLogger(ScopeLearnApplication.class);

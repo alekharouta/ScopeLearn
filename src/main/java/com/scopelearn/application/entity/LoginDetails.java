@@ -4,12 +4,14 @@
 
 package com.scopelearn.application.entity;
 
+import javax.validation.constraints.NotEmpty;
 
 public class LoginDetails {
 	
-
+	@NotEmpty(message = "name must not be empty")
 	private String username;
 
+	@NotEmpty(message = "password must not be empty")
 	private String password;
 
 
