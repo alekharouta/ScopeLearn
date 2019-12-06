@@ -6,35 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ScopeLearn | Home</title>
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="/img/favicon.ico"
-	type="image/x-icon">
-
-<!-- Font awesome -->
-<link href="assets/css/font-awesome.css" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<!-- Slick slider -->
-<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-<!-- Fancybox slider -->
-<link rel="stylesheet" href="assets/css/jquery.fancybox.css"
-	type="text/css" media="screen" />
-<!-- Theme color -->
-<link id="switcher" href="assets/css/theme-color/default-theme.css"
-	rel="stylesheet">
-
-<!-- Main style sheet -->
-<link href="assets/css/style.css" rel="stylesheet">
-
-
-<!-- Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
-	rel='stylesheet' type='text/css'>
-<link
-	href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700'
-	rel='stylesheet' type='text/css'>
-
-
 <script>
 	function d(val) {
 		document.getElementById('result').value += val;

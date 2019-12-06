@@ -1,16 +1,24 @@
 package com.scopelearn.application.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="user")
-public class RegisterDetails {
+public class RegisterDetails implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)	
@@ -20,19 +28,6 @@ public class RegisterDetails {
 	@NotNull
 	private String username;
 	
-	@Column(name="gender")
-	private String gender;
-	
-	@Column(name="mob_number")
-	@NotNull
-	private String mobilenumber;
-	
-	@Column(name="email_Id")
-	private String emailId;
-	
-	@Column(name="password")
-	private String password;
-
 	public Long getId() {
 		return id;
 	}
@@ -57,20 +52,20 @@ public class RegisterDetails {
 		this.gender = gender;
 	}
 
-	public String getMobilenumber() {
-		return mobilenumber;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setMobilenumber(String mobilenumber) {
-		this.mobilenumber = mobilenumber;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	public String getEmailId() {
-		return emailId;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
@@ -80,6 +75,26 @@ public class RegisterDetails {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	@Column(name="gender")
+	private String gender;
 	
+	@Column(name="mob_number")
+	@NotNull
+	private String phone;
+	
+	@Column(name="email_Id")
+	@NotNull
+	private String email;
+
+	@Column(name="password")
+	private String password;
+
+	
+
 	
 }

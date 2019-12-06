@@ -27,7 +27,7 @@ public class LoginServiceImpl implements LoginService{
 	        String password = new String(decoder.decode(registerDetails.getPassword()));  
 	        if(password.equals(loginDetails.getPassword())){
 	        	
-	        	return "successs";
+	        	return "success";
 	        }
 		}
 		
