@@ -18,9 +18,8 @@
 <link rel="icon" href="/js/alekh.JPG">
 <title>Login</title>
 
-   <%--  <script src="<%=request.getContextPath()%>/js/jquery-1.6.2.js"></script> --%>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <%-- <script src="<%=request.getContextPath()%>/js/bootstrap-3.3.2.min.js"></script> --%>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 <script type="text/javascript">
@@ -30,7 +29,8 @@
 <script>
 	
 		$(document).ready(function(){
-
+			//$("#loginForm").css("display", "none");
+			
 			function loginUser(jsonString)			{
 								
 				$.ajax({
@@ -85,11 +85,20 @@
 			return flag;
 		}
 			}
-					
-				});
 			
-	</script>
-
+		/* 	function myFunction() {
+				var x = document.getElementById("loginForm");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+				}); */
+			
+		
+	
+</script>
 </head>
 
 <body class="loginbg">
@@ -101,54 +110,56 @@
 		<div class="loginBlk clearfix">
 			<div class="col-md-4 pull-center">
 				<div class="loginForm">
-					<h3>Login</h3>
-					<form:form id="loginForm" modelAttribute="login" action="login" method="post">
-                <table align="center">
-                    <tr>
-                        <td>
-                            <form:label path="username">Username: </form:label>
-                        </td>
-                        <td>
-                            <form:input path="username" name="username" id="username" placeholder="UserName"/>
-                            <span id="loginUserNameError" class="errors">required</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="password">Password:</form:label>
-                            <span id="loginUserPwdError" class="errors">required</span>
-                        </td>
-                        <td>
-                            <form:password path="password" name="password" id="password" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td align="left">
-                            <form:button id="loginBtn" name="login" onclick="loginSign()">Login</form:button>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td><a href="register">Register</a>
-                        </td>
-                    </tr>
-                </table>
-            </form:form>
-            <table align="center">
-                <tr>
-                    <td style="font-style: italic; color: red;">${message}</td>
-                </tr>
-            </table>
-				</div>
+					
+					<form:form id="loginForm" modelAttribute="login" action="login"
+						method="post" class="login100-form validate-form">
+						<span class="login100-form-title" style="size: 50">&nbsp; &nbsp;<b>User Login </b></span>
+						<div class="wrap-input100 validate-input"
+							data-validate="Valid email is required: ex@abc.xyz">
+							<form:label path="username"></form:label>
+							<form:input class="input100" path="username" name="username"
+								id="username" placeholder="UserName" />
+							<span id="loginUserNameError" class="errors"></span> <span
+								class="focus-input100"></span> <span class="symbol-input100">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input"
+							data-validate="Password is required">
+							<form:label path="password"></form:label>
+							<span id="loginUserPwdError" class="errors"></span>
+							<form:password path="password" name="password" id="password"
+								placeholder="Password" />
+							<span class="focus-input100"></span> <span
+								class="symbol-input100"> <i class="fa fa-lock"
+								aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<br />
+						<div class="container-login100-form-btn">
+							<form:button class="login100-form-btn" id="loginBtn" name="login"
+								onclick="loginSign()">Login</form:button>
+						</div>
+						<br />
+						<div style="font-style: italic; color: red;">${message}</div>
+
+						<span class="txt1"> Forgot </span>
+						<a class="txt2" href="forgotpassword"> Password </a>
+				
+
+				<br /> <span class="txt1">Not Registered? &nbsp;</span><a
+					class="txt2" href="register">Register</a>
+
+				</form:form>
+
 			</div>
-			
 		</div>
+
 	</div>
-	<!-- Dummy form to submit for login -->
-	<form autocomplete="off" id="userLogin" name="userLogin" action="login"
-		method="POST"></form>
+	</div>	
+	
 	<footer class="clearfix loginfooter">
 		<jsp:include page="footer.jsp"></jsp:include>
 	</footer>

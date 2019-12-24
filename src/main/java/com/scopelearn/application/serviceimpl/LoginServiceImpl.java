@@ -5,7 +5,9 @@ import java.util.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.scopelearn.application.dao.AuditRepository;
 import com.scopelearn.application.dao.UserRepository;
+import com.scopelearn.application.entity.LoginAudit;
 import com.scopelearn.application.entity.LoginDetails;
 import com.scopelearn.application.entity.RegisterDetails;
 import com.scopelearn.application.service.LoginService;
@@ -14,6 +16,9 @@ public class LoginServiceImpl implements LoginService{
 
 	@Autowired
 	UserRepository userRepository;
+	
+	@Autowired
+	AuditRepository auditRepository;
 	
 	@Override
 	public String userLogin(LoginDetails loginDetails) {
@@ -32,6 +37,12 @@ public class LoginServiceImpl implements LoginService{
 		}
 		
 		return "failure";
+	}
+	
+	public void loginAudit(LoginAudit loginAudit ) {
+		
+		auditRepository.save(loginAudit);
+		
 	}
 
 }

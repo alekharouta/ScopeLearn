@@ -94,7 +94,32 @@ public class RegisterDetails implements Serializable{
 	@Column(name="password")
 	private String password;
 
+	@Column(name="role")
+	private String role;
+	
+	
+	@Column(name="text_kba")
+	private String text;
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	
 
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public RegisterDetails() {
+	}
 	
 }

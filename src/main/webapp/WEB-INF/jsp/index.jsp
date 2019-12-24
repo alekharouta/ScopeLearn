@@ -35,6 +35,7 @@ input[type="button"] {
 #wrap {
 	margin: 10%;
 }
+}
 </style>
 </head>
 <script src="/js/jquery.js"></script>
@@ -51,7 +52,7 @@ input[type="button"] {
 		<div class="mu-slider-single">
 			<div class="mu-slider-img">
 				<figure>
-					<img src="assets/img/slider/1.jpg" alt="img">
+					<img src="images/pic3.jpg" alt="img">
 				</figure>
 			</div>
 			<div class="mu-slider-content">
@@ -68,7 +69,7 @@ input[type="button"] {
 		<div class="mu-slider-single">
 			<div class="mu-slider-img">
 				<figure>
-					<img src="assets/img/slider/2.jpg" alt="img">
+					<img src="images/pic2.jpg" alt="img">
 				</figure>
 			</div>
 
@@ -78,7 +79,7 @@ input[type="button"] {
 		<div class="mu-slider-single">
 			<div class="mu-slider-img">
 				<figure>
-					<img src="assets/img/slider/3.jpg" alt="img">
+					<img src="images/pic1.jpg" alt="img">
 				</figure>
 			</div>
 
@@ -88,7 +89,7 @@ input[type="button"] {
 	<!-- End Slider -->
 
 	<!-- Start about us -->
-	<section id="mu-about-us">
+<!-- 	<section id="mu-about-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -96,11 +97,11 @@ input[type="button"] {
 						<div class="row">
 							<div class="col-lg-6 col-md-6">
 								<div class="mu-about-us-left">
-									<!-- Start Title -->
+									Start Title
 									<div class="mu-title">
 										<h2>About Us</h2>
 									</div>
-									<!-- End Title -->
+									End Title
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Rerum pariatur fuga eveniet soluta aspernatur rem, nam
 										voluptatibus voluptate voluptates sapiente, inventore.
@@ -130,17 +131,17 @@ input[type="button"] {
 		</div>
 		</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End about us -->
 
 	<!-- Start about us counter -->
-	<section id="mu-abtus-counter">
+<!-- 	<section id="mu-abtus-counter">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mu-abtus-counter-area">
 						<div class="row">
-							<!-- Start counter item -->
+							Start counter item
 							<div class="col-lg-3 col-md-3 col-sm-3">
 								<div class="mu-abtus-counter-single">
 									<span class="fa fa-book"></span>
@@ -148,8 +149,8 @@ input[type="button"] {
 									<p>Subjects</p>
 								</div>
 							</div>
-							<!-- End counter item -->
-							<!-- Start counter item -->
+							End counter item
+							Start counter item
 							<div class="col-lg-3 col-md-3 col-sm-3">
 								<div class="mu-abtus-counter-single">
 									<span class="fa fa-users"></span>
@@ -157,8 +158,8 @@ input[type="button"] {
 									<p>Students</p>
 								</div>
 							</div>
-							<!-- End counter item -->
-							<!-- Start counter item -->
+							End counter item
+							Start counter item
 							<div class="col-lg-3 col-md-3 col-sm-3">
 								<div class="mu-abtus-counter-single">
 									<span class="fa fa-flask"></span>
@@ -166,8 +167,8 @@ input[type="button"] {
 									<p>Modern Lab</p>
 								</div>
 							</div>
-							<!-- End counter item -->
-							<!-- Start counter item -->
+							End counter item
+							Start counter item
 							<div class="col-lg-3 col-md-3 col-sm-3">
 								<div class="mu-abtus-counter-single no-border">
 									<span class="fa fa-user-secret"></span>
@@ -175,13 +176,13 @@ input[type="button"] {
 									<p>Teachers</p>
 								</div>
 							</div>
-							<!-- End counter item -->
+							End counter item
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End about us counter -->
 
 	<!-- Start features section -->
@@ -225,9 +226,9 @@ input[type="button"] {
 							<div class="col-lg-4 col-md-4 col-xs-12">
 								<div class="mu-latest-course-single">
 									<figure class="mu-latest-course-img">
-										<a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
+										<a href="#"><img src="images/java.jpg" alt="img" height="250" width="700"></a>
 										<figcaption class="mu-latest-course-imgcaption">
-											<a href="#">Drawing</a> <span><i class="fa fa-clock-o"></i>90Days</span>
+											<a href="#">Core Java</a> <span><i class="fa fa-clock-o"></i>90Days</span>
 										</figcaption>
 									</figure>
 									<div class="mu-latest-course-single-content">
@@ -238,6 +239,53 @@ input[type="button"] {
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-4 col-xs-12">
+								<div class="mu-latest-course-single">
+									<figure class="mu-latest-course-img">
+										<a href="#"><img src="images/angular.png" alt="img" height="250" width="700"></a>
+										<figcaption class="mu-latest-course-imgcaption">
+											<a href="#">Angular </a> <span><i
+												class="fa fa-clock-o"></i>75Days</span>
+										</figcaption>
+									</figure>
+									<div class="mu-latest-course-single-content">
+										<h4>
+											<a href="#">Lorem ipsum dolor sit amet.</a>
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-xs-12">
+								<div class="mu-latest-course-single">
+									<figure class="mu-latest-course-img">
+										<a href="#"><img src="images/python.jpg" alt="img" height="250" width="700"></a>
+										<figcaption class="mu-latest-course-imgcaption">
+											<a href="#">Python</a> <span><i
+												class="fa fa-clock-o"></i>45Days</span>
+										</figcaption>
+									</figure>
+									<div class="mu-latest-course-single-content">
+										<h4>
+											<a href="#">Lorem ipsum dolor sit amet.</a>
+										</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-xs-12">
+								<div class="mu-latest-course-single">
+									<figure class="mu-latest-course-img">
+										<a href="#"><img src="images/c.png" alt="img" height="250" width="700"></a>
+										<figcaption class="mu-latest-course-imgcaption">
+											<a href="#">C & C++</a> <span><i class="fa fa-clock-o"></i>90Days</span>
+										</figcaption>
+									</figure>
+									<div class="mu-latest-course-single-content">
+										<h4>
+											<a href="#">Lorem ipsum dolor sit amet.</a>
+										</h4>
+									</div>
+								</div>
+							</div>
+						<!-- 	<div class="col-lg-4 col-md-4 col-xs-12">
 								<div class="mu-latest-course-single">
 									<figure class="mu-latest-course-img">
 										<a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
@@ -252,11 +300,11 @@ input[type="button"] {
 										</h4>
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-xs-12">
+							</div> -->
+							<!-- <div class="col-lg-4 col-md-4 col-xs-12">
 								<div class="mu-latest-course-single">
 									<figure class="mu-latest-course-img">
-										<a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
+										<a href="#"><img src="assets/img/courses/3.jpg" alt="img" height="350" width="700"></a>
 										<figcaption class="mu-latest-course-imgcaption">
 											<a href="#">Academic</a> <span><i
 												class="fa fa-clock-o"></i>45Days</span>
@@ -269,54 +317,7 @@ input[type="button"] {
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-4 col-xs-12">
-								<div class="mu-latest-course-single">
-									<figure class="mu-latest-course-img">
-										<a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
-										<figcaption class="mu-latest-course-imgcaption">
-											<a href="#">Drawing</a> <span><i class="fa fa-clock-o"></i>90Days</span>
-										</figcaption>
-									</figure>
-									<div class="mu-latest-course-single-content">
-										<h4>
-											<a href="#">Lorem ipsum dolor sit amet.</a>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-xs-12">
-								<div class="mu-latest-course-single">
-									<figure class="mu-latest-course-img">
-										<a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
-										<figcaption class="mu-latest-course-imgcaption">
-											<a href="#">Engineering </a> <span><i
-												class="fa fa-clock-o"></i>75Days</span>
-										</figcaption>
-									</figure>
-									<div class="mu-latest-course-single-content">
-										<h4>
-											<a href="#">Lorem ipsum dolor sit amet.</a>
-										</h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-xs-12">
-								<div class="mu-latest-course-single">
-									<figure class="mu-latest-course-img">
-										<a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
-										<figcaption class="mu-latest-course-imgcaption">
-											<a href="#">Academic</a> <span><i
-												class="fa fa-clock-o"></i>45Days</span>
-										</figcaption>
-									</figure>
-									<div class="mu-latest-course-single-content">
-										<h4>
-											<a href="#">Lorem ipsum dolor sit amet.</a>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div>
+						</div> -->
 						<!-- End latest course content -->
 					</div>
 				</div>
@@ -334,9 +335,7 @@ input[type="button"] {
 						<!-- begain title -->
 						<div class="mu-title">
 							<h2>Our Teachers</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Culpa, repudiandae, suscipit repellat minus molestiae ea.</p>
-						</div>
+							</div>
 						<!-- end title -->
 						<!-- begain our teacher content -->
 						<div class="mu-our-teacher-content">
@@ -344,8 +343,8 @@ input[type="button"] {
 								<div class="col-lg-3 col-md-3  col-sm-6">
 									<div class="mu-our-teacher-single">
 										<figure class="mu-our-teacher-img">
-											<img src="assets/img/teachers/teacher-01.png"
-												alt="teacher img">
+											<img src="images/alekh.jpg"
+												alt="teacher img" height="350" width="700">
 											<div class="mu-our-teacher-social">
 												<a href="#"><span class="fa fa-facebook"></span></a> <a
 													href="#"><span class="fa fa-twitter"></span></a> <a
@@ -354,19 +353,16 @@ input[type="button"] {
 											</div>
 										</figure>
 										<div class="mu-ourteacher-single-content">
-											<h4>Brian Dean</h4>
-											<span>Math Teacher</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Similique quod pariatur recusandae odio dignissimos.
-												Eligendi.</p>
+											<h4>Alekh Rout</h4>
+											<span>Spring</span>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-6">
 									<div class="mu-our-teacher-single">
 										<figure class="mu-our-teacher-img">
-											<img src="assets/img/teachers/teacher-02.png"
-												alt="teacher img">
+											<img src="images/praveena.jpg"
+												alt="teacher img" height="350" width="700">
 											<div class="mu-our-teacher-social">
 												<a href="#"><span class="fa fa-facebook"></span></a> <a
 													href="#"><span class="fa fa-twitter"></span></a> <a
@@ -375,19 +371,16 @@ input[type="button"] {
 											</div>
 										</figure>
 										<div class="mu-ourteacher-single-content">
-											<h4>James Hein</h4>
-											<span>Physics Teacher</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Similique quod pariatur recusandae odio dignissimos.
-												Eligendi.</p>
+											<h4>Praveena Panigrahy</h4>
+											<span>Angular</span>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-6">
 									<div class="mu-our-teacher-single">
 										<figure class="mu-our-teacher-img">
-											<img src="assets/img/teachers/teacher-03.png"
-												alt="teacher img">
+											<img src="images/milan.jpg"
+												alt="teacher img" height="350" width="700">
 											<div class="mu-our-teacher-social">
 												<a href="#"><span class="fa fa-facebook"></span></a> <a
 													href="#"><span class="fa fa-twitter"></span></a> <a
@@ -396,19 +389,17 @@ input[type="button"] {
 											</div>
 										</figure>
 										<div class="mu-ourteacher-single-content">
-											<h4>Rebeca Michel</h4>
-											<span>English Teacher</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Similique quod pariatur recusandae odio dignissimos.
-												Eligendi.</p>
+											<h4>Milan Patra</h4>
+											<span>Python</span>
+											
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-6">
 									<div class="mu-our-teacher-single">
 										<figure class="mu-our-teacher-img">
-											<img src="assets/img/teachers/teacher-04.png"
-												alt="teacher img">
+											<img src="images/anil.jpg"
+												alt="teacher img" height="350" width="500">
 											<div class="mu-our-teacher-social">
 												<a href="#"><span class="fa fa-facebook"></span></a> <a
 													href="#"><span class="fa fa-twitter"></span></a> <a
@@ -417,14 +408,13 @@ input[type="button"] {
 											</div>
 										</figure>
 										<div class="mu-ourteacher-single-content">
-											<h4>John Doe</h4>
-											<span>Biology Teacher</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit. Similique quod pariatur recusandae odio dignissimos.
-												Eligendi.</p>
+											<h4>Anila Kumar Behera</h4>
+											<span>Core Java</span>
+											
 										</div>
 									</div>
 								</div>
+								
 							</div>
 						</div>
 						<!-- End our teacher content -->

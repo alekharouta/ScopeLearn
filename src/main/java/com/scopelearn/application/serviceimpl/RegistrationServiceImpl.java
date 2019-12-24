@@ -40,6 +40,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 
 			registerDetails.setId(Long.parseLong(String.valueOf(randInRange)));
 			registerDetails.setPassword(base64encodedString);
+			registerDetails.setText(registerDetails.getText());
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		} catch (NoSuchAlgorithmException e) {
