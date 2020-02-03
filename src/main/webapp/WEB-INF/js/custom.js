@@ -93,7 +93,7 @@ function getEncryptedPassword(givenPassword){
 		error : function(error) {
 			
 			loadingPleaseWait('N');
-			console.log('ajax call getEncryptedPassword error : '+error);
+			console.log('ajax call getEncryptedPassword error description : '+error);
 		}
 	});
 	
